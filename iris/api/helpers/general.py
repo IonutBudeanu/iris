@@ -180,6 +180,7 @@ def click_hamburger_menu_option(option):
     else:
         click('hamburger_menu.png')
         try:
+            time.sleep(1)
             region.wait(option, 10)
             logger.debug('Option found')
         except FindError:
