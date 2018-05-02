@@ -12,6 +12,7 @@ class Test(BaseTest):
         BaseTest.__init__(self, app)
         self.meta = 'This is a test case that checks if the Title Bar can be activated/deactivated properly from ' \
                     'Customize menu'
+        self.exclude = Platform.LINUX
 
     def run(self):
         url = 'about:home'
